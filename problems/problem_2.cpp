@@ -1,14 +1,7 @@
-#include <iostream>
-using namespace std;
-
-int main() {
-   
-
-   double i, j, k;
-cin >> i >> j >> k;
+float problemSolution2(float i, float j, float k) {
     float result;
     // write your code here;
-    result  = (i>j) ? i : ((i>k)? i: (j>k) ? j :k);
-cout << result;
+    float result = (i > j) ? ((i > k) ? i : k) : ((j > k) ? j : k);
+
     return result;
 }
