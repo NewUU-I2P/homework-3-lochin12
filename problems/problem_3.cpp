@@ -13,5 +13,4 @@ else if (S=='W')
     else if (height >= 1.6 and height<1.75){return 'Normal';}
     else {return 'Tall';}
 }   
-return 0;
 }
