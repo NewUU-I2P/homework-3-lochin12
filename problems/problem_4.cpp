@@ -2,8 +2,27 @@
 #include <sstream>
 
 std::string problemSolution4(const std::string &macAddress) {
-    // write your code here
+    std::istringstream ss(macAddress);
+    int firstOctet;
 
-    // make use of control flow statements
-    // return result;
+    // Read the first octet from the MAC address
+    ss >> std::hex >> firstOctet;
+
+    // Check for Broadcast address
+    if (macAddress == "FF:FF:FF:FF:FF:FF") {
+        return "Broadcast";
+    }
+
+    // Check for Unicast address
+    if (firstOctet % 2 == 0) {
+        return "Unicast";
+    }
+
+    // Check for Multicast address
+    if (firstOctet % 2 != 0) {
+        return "Multicast";
+    }
+
+    // Default case (should not reach here in a valid scenario)
+    return "Unknown";
 }
