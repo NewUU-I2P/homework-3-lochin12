@@ -1,5 +1,11 @@
-void problemSolution1(float consumed_water) {
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+int main()
+{ 
+    float consumed_water; 
     float cost;
+    cin>> consumed_water;
     // write your code here
 if (consumed_water<=30)
     cost= (consumed_water*0.4) +13;
@@ -9,5 +15,6 @@ if (consumed_water<=30)
             cost = (consumed_water -50)*1.4+ 30*0.4 + 20*0.12+13;
             if (consumed_water>60)
                  cost= (consumed_water-60)*1.5 + 1.4*10 +20*0.12 +30*0.4+13;
-    return cost;
-}
+    cout<< cost;
+
+
