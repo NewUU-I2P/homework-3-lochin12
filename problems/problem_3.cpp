@@ -1,6 +1,6 @@
 #include <string>
 
-string problemSolution3(float height, char S); 
+float problemSolution3(float height, char S); 
     // write your code here
     float height;
     char S;
