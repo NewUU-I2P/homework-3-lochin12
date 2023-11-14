@@ -1,6 +1,6 @@
 #include <string>
 
-string problemSolution3(float height, char S){
+std:: string problemSolution3(float height, char S){
     // write your code here
 if (S=='M')
 {
