@@ -4,7 +4,6 @@ float problemSolution3(float height, char S);
     // write your code here
     float height;
     char S;
-    cin >> S>>height;
 if (S=='M')
 {
     if ( height<1.7){std::cout<<"Short"; }
